@@ -3,7 +3,8 @@ resource "aws_security_group" "roopi" {
     name = var.sg_name
     description = var.sg_description
     vpc_id = "vpc-09cc45bcaea79a54e"
-
+    
+# terraform block
     ingress {
         from_port = var.ssh_port
         to_port = var.ssh_port
