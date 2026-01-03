@@ -1,0 +1,21 @@
+# 1. Local terraform directory (contains large binaries)
+**/.terraform/*
+
+# 2. State files (can contain sensitive plain-text secrets)
+*.tfstate
+*.tfstate.*
+
+# 3. Variable files (often contain secrets like passwords)
+*.tfvars
+*.tfvars.json
+
+# 4. Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# 5. CLI configuration and logs
+.terraformrc
+terraform.rc
+crash.log
